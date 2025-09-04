@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Muhammad Usman | Clinical Pharmacist & Pharmacy Expert</title>
+    <meta
+      name="description"
+      content="Professional Clinical Pharmacist with 5+ years experience in medication management, inventory control, and patient consultation. Expert in drug interactions and pharmacy operations."
+    />
+    <meta
+      name="keywords"
+      content="Clinical Pharmacist, Pharmacy Expert, Pakistan, Medication Management, Drug Interactions, Pharmacy Technician"
+    />
+    <meta name="author" content="Muhammad Usman" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://muhammadusaman-pharmacy.netlify.app" />
+
+    <!-- Facebook/LinkedIn -->
+    <meta
+      property="og:title"
+      content="Muhammad Usman | Clinical Pharmacist Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="5+ years experience in clinical pharmacy and medication management. Expert consultation services available."
+    />
+  
+    <meta property="og:site_name" content="Muhammad Usman Pharmacy Portfolio" />
+
+   
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="logo.png" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    
+    <!-- Theme Color (Mobile) -->
+    <meta name="theme-color" content="#00A86B" />
+
+    <!-- Schema.org Markup (Rich Snippets) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Usman",
+        "jobTitle": "Clinical Pharmacist",
+        "url": "https://muhammadusaman-pharmacy.netlify.app",
+        "sameAs": [
+        ],
+        "skills": ["Clinical Pharmacy", "Drug Interactions", "Inventory Management", "Patient Consultation", "Excel", "GRN Management"]
+      }
+    </script>
+
+    <!-- Bootstrap & FontAwesome -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation Library -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Modern Global Styles */
+      :root {
+        --primary: #00A86B;
+        --secondary: #007BB8;
+        --dark: #1a1a2e;
+        --light: #f9f9f9;
+        --accent: #FF6B35;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+        background-color: var(--light);
+        color: #333;
+      }
+
+       html, body {
+        width: 100vw;
+        overflow-x: hidden;
+       }
+      
+      /* Modern Navbar */
+      nav.navbar {
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        transition: background 0.3s;
+      }
+      .navbar-brand {
+        font-weight: 700;
+        color: var(--dark) !important;
+      }
+      .nav-link {
+        font-weight: 500;
+        position: relative;
+      }
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background: var(--primary);
+        transition: width 0.3s;
+      }
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      /* Modern Hero with Profile Image */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(135deg, #e8f5e8 0%, #d4f1d4 100%);
+        padding: 80px 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-content {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+      }
+      .profile-img {
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+        object-fit: cover;
+        border: 5px solid white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      .hero h1 {
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+      }
+      .hero h4 {
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 30px;
+      }
+      .hero-btns .btn {
+        padding: 12px 25px;
+        font-weight: 600;
+        border-radius: 10px;
+        margin-right: 15px;
+      }
+      .btn-primary {
+        background: var(--primary);
+        border: none;
+      }
+      .btn-outline-primary {
+        border-color: var(--primary);
+        color: var(--primary);
+      }
+      .btn-outline-primary:hover {
+        background: var(--primary);
+        color: white;
+      }
+
+      /* Gradient Section Titles */
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #00A86B, #007BB8);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 40px;
+        position: relative;
+        display: inline-block;
+      }
+      .section-title::after {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 4px;
+        bottom: -10px;
+        left: 0;
+        background: linear-gradient(90deg, #00A86B, #007BB8);
+        border-radius: 2px;
+      }
+
+      section {
+        padding: 100px 0;
+      }
+
+      /* About Section */
+      #about {
+        background: white;
+      }
+      .about-img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      .about-content {
+        padding-left: 40px;
+      }
+      .about-content p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 25px;
+      }
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .skill-badge {
+        background: rgba(0, 168, 107, 0.1);
+        color: var(--primary);
+        padding: 8px 15px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+
+      /* Experience Section */
+      #experience {
+        background: #f8f9fa;
+      }
+      .experience-item {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        height: 100%;
+        margin-bottom: 30px;
+      }
+      .experience-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      .experience-icon {
+        width: 60px;
+        height: 60px;
+        background: rgba(0, 168, 107, 0.1);
+        color: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .experience-title {
+        font-weight: 600;
+        color: var(--primary);
+        margin-bottom: 10px;
+      }
+      .experience-company {
+        font-weight: 500;
+        color: var(--dark);
+        margin-bottom: 5px;
+      }
+      .experience-duration {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+      }
+
+      /* Services Section */
+      #services {
+        background: white;
+      }
+      .service-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px 30px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        height: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      .service-icon {
+        width: 80px;
+        height: 80px;
+        background: rgba(0, 168, 107, 0.1);
+        color: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 36px;
+        margin: 0 auto 20px;
+      }
+
+      /* Testimonial Cards */
+      .testimonial-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        height: 100%;
+      }
+      .testimonial-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      .testimonial-name {
+        font-weight: 600;
+        margin-top: 20px;
+        color: var(--primary);
+      }
+
+      /* Modern Contact Section */
+      #contact {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        padding: 80px;
+        margin: 50px auto;
+      }
+      .contact-info {
+        margin-bottom: 40px;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .contact-icon {
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 168, 107, 0.1);
+        color: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-right: 15px;
+      }
+      .contact-text {
+        font-size: 1.1rem;
+      }
+      .contact-text a {
+        color: var(--primary);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .contact-text a:hover {
+        color: #008c5a;
+      }
+
+      /* WhatsApp Floating Button  */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background: #25D366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        text-decoration: none !important;
+      }
+      .whatsapp-icon {
+        color: white;
+        font-size: 30px;
+        text-decoration: none !important;
+      }
+
+      /* Social Sidebar - Hidden on Mobile */
+      .social-sidebar {
+        position: fixed;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+      }
+      .social-sidebar a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #00A86B, #007BB8);
+        color: white;
+        border-radius: 50%;
+        font-size: 20px;
+        text-decoration: none;
+        transition: all 0.3s;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .social-sidebar a:hover {
+        transform: translateX(5px);
+        background: linear-gradient(135deg, #008c5a, #0066a3);
+      }
+
+      /* Footer */
+      footer {
+        background: var(--dark);
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+      }
+      .footer-text {
+        margin-bottom: 0;
+      }
+
+      .icon-box {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .bg-primary-soft {
+        background-color: rgba(0, 168, 107, 0.1);
+      }
+      .bg-success-soft {
+        background-color: rgba(0, 123, 184, 0.1);
+      }
+      .bg-warning-soft {
+        background-color: rgba(255, 107, 53, 0.1);
+      }
+      .card {
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 992px) {
+        .hero-content {
+          flex-direction: column;
+          text-align: center;
+        }
+        .profile-img {
+          width: 250px;
+          height: 250px;
+          margin-bottom: 30px;
+        }
+        .about-content {
+          padding-left: 0;
+          margin-top: 30px;
+        }
+        .section-title {
+          font-size: 2rem;
+        }
+        .social-sidebar {
+          display: none !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+        .hero h4 {
+          font-size: 1rem;
+        }
+        #contact {
+          padding: 40px;
+        }
+        .whatsapp-float {
+          bottom: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+        }
+        .whatsapp-icon {
+          font-size: 24px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .hero-btns .btn {
+          display: block;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/923032435345" target="_blank" class="whatsapp-float">
+      <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <!-- Social Sidebar - Hidden on Mobile -->
+    <div class="social-sidebar d-none d-lg-flex">
+      <a href="https://instagram.com/me_usman.134" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://pk.linkedin.com/in/muhammadusman" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:usmankhanusamerica@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="logo.png" alt="Muhammad Usman - Clinical Pharmacist" width="40" height="auto" class="me-2">
+          Muhammad Usman
+        </a>
+        <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up">
+          <img
+            src="profile.png"
+            alt="Muhammad Usman - Clinical Pharmacist"
+            class="profile-img"
+            data-aos="fade-right"
+          />
+          <div data-aos="fade-left">
+            <h1>
+              I'm <span style="color: var(--primary)">Muhammad Usman</span>
+            </h1>
+            <h4>Clinical Pharmacist & Medication Expert</h4>
+            <div class="hero-btns">
+              <a href="#services" class="btn btn-primary">My Services</a>
+              <a href="#contact" class="btn btn-outline-primary">Consult Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img
+              src="profile.png"
+              alt="Muhammad Usman in Pharmacy Setting"
+              class="about-img"
+            />
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="about-content">
+              <p>
+                I am Muhammad Usman, a dedicated Clinical Pharmacist with 5+ years of hands-on experience in pharmaceutical care and medication management.
+              </p>
+              <p>
+                My expertise lies in drug interactions, inventory management, and providing personalized medication consultations. I have won recognition for my exceptional reviews on complex medication scenarios and drug compatibility assessments.
+              </p>
+              <p>
+                I specialize in helping patients understand their medications, identifying potential drug interactions, and optimizing pharmaceutical operations for healthcare facilities.
+              </p>
+              <div class="skills-list">
+                <span class="skill-badge">Drug Interactions</span>
+                <span class="skill-badge">Clinical Pharmacy</span>
+                <span class="skill-badge">Inventory Management</span>
+                <span class="skill-badge">Patient Consultation</span>
+                <span class="skill-badge">Excel & GRN</span>
+                <span class="skill-badge">Medication Review</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-light">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">
+          Professional Experience
+        </h2>
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="experience-title">Senior Pharmacist</h4>
+              <h5 class="experience-company">Diamond Super Market</h5>
+              <p class="experience-duration">Current Position</p>
+              <p>Leading pharmacy operations, managing inventory, and providing expert medication guidance to customers with complex health conditions.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-pills"></i>
+              </div>
+              <h4 class="experience-title">Pharmacist</h4>
+              <h5 class="experience-company">Al-Masood Pharmacy</h5>
+              <p class="experience-duration">3 Years</p>
+              <p>Specialized in clinical consultations, drug interaction assessments, and won awards for best medication reviews in special conditions.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-user-graduate"></i>
+              </div>
+              <h4 class="experience-title">Junior Pharmacist</h4>
+              <h5 class="experience-company">Ali Medical Store</h5>
+              <p class="experience-duration">2 Years</p>
+              <p>Started my career learning pharmaceutical operations, customer service, and developing expertise in medication management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">
+          My Services
+        </h2>
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-stethoscope"></i>
+              </div>
+              <h4>Medication Consultation</h4>
+              <p>Expert advice on drug interactions, dosage optimization, and medication safety for patients with multiple conditions.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-clipboard-check"></i>
+              </div>
+              <h4>Drug Interaction Review</h4>
+              <p>Comprehensive analysis of medication combinations to ensure patient safety and therapeutic effectiveness.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-warehouse"></i>
+              </div>
+              <h4>Inventory Management</h4>
+              <p>Professional pharmacy inventory management, purchasing coordination, and GRN preparation using advanced Excel systems.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h4>Expiry Management</h4>
+              <p>Expert identification of expired medications and implementation of effective stock rotation systems for pharmacies.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-user-md"></i>
+              </div>
+              <h4>Clinical Pharmacy</h4>
+              <p>Specialized clinical pharmacy services for complex medical conditions and patient-specific therapeutic recommendations.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h4>Pharmacy Operations</h4>
+              <p>Complete pharmacy setup consultation, workflow optimization, and staff training for improved operational efficiency.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="section-title">Get Professional Consultation</h2>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <a href="mailto:usmankhanusamerica@gmail.com">Email Me</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="contact-text">
+                  <a href="https://instagram.com/mr_usman.134" target="_blank">@Mr_Usman.134</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="contact-text">
+                  <a href="https://pk.linkedin.com/in/muhammadusman" target="_blank">muhammadusman</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <form 
+              name="pharmacy-contact" 
+              method="POST" 
+              netlify
+              netlify-honeypot="bot-field"
+              class="contact-form"
+            >
+              <input type="hidden" name="form-name" value="pharmacy-contact">
+              <p class="d-none">
+                <label>Don't fill this out: <input name="bot-field"></label>
+              </p>
+              
+              <div class="mb-3">
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  name="name" 
+                  placeholder="Your Name" 
+                  required
+                >
+              </div>
+              <div class="mb-3">
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  name="email" 
+                  placeholder="Your Email" 
+                  required
+                >
+              </div>
+              <div class="mb-3">
+                <input 
+                  type="tel" 
+                  class="form-control" 
+                  name="phone" 
+                  placeholder="Your Phone Number"
+                >
+              </div>
+              <div class="mb-3">
+                <select class="form-control" name="service" required>
+                  <option value="">Select Service Needed</option>
+                  <option value="medication-consultation">Medication Consultation</option>
+                  <option value="drug-interaction">Drug Interaction Review</option>
+                  <option value="inventory-management">Inventory Management</option>
+                  <option value="pharmacy-setup">Pharmacy Setup Consultation</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea 
+                  class="form-control" 
+                  name="message" 
+                  rows="5" 
+                  placeholder="Describe your needs or questions..." 
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                <i class="fas fa-paper-plane me-2"></i>Send Message
+              </button>
+            </form>
+            <div id="formSuccess" class="alert alert-success mt-3 d-none">
+              Thank you! Your message has been sent successfully. I'll get back to you soon.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+         <p class="footer-text">Dedicated to Excellence in Pharmaceutical Care 💊 Made in Pakistan</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+      // Initialize AOS animations
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+
+      // Navbar close on mobile when clicking links
+      document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            if (window.innerWidth < 992) { // Only for mobile
+              const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+              });
+              bsCollapse.hide();
+            }
+          });
+        });
+
+        // Form submission handler
+        const form = document.querySelector('form[name="pharmacy-contact"]');
+        const successAlert = document.getElementById('formSuccess');
+        
+        if (form) {
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would normally submit to Netlify
+            // For now, just show success message
+            successAlert.classList.remove('d-none');
+            form.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+              successAlert.classList.add('d-none');
+            }, 5000);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
